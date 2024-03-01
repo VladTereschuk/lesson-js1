@@ -45,3 +45,21 @@ function firstCapitalLetter(inputText)
     return text;
 }
 console.log(firstCapitalLetter("hello world"));
+
+// 1. Write function that checks if element exists in array
+// 2. Function returns element position in array if element exists in array or -1 if not
+arr = ["hello", "Bye", "See you", "Take care", "What's up", "What's cooking"];
+
+function checkIfElementExist(arr, element)
+{
+    for(let i=0;i<arr.length;i++)
+    {
+        console.log(arr[i]);
+        if(arr[i] == element)
+        {
+            return i;
+        }     
+    }  
+    return -1;
+}
+console.log(checkIfElementExist(arr,"Take care"));
