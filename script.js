@@ -63,3 +63,33 @@ function checkIfElementExist(arr, element)
     return -1;
 }
 console.log(checkIfElementExist(arr,"Take care"));
+
+// 1. Write function that returns if value is a number
+// 2. If it is a number function returns true
+// 3. if it is not function returns false
+
+// Algorithm:
+// 1. Go through the loop of symbols in the value
+// 2. Create array of digits from 0 to 9
+// 3. If ALL symbols are digits then value is a number
+// 4. If at least one symbol is NOT a digit then the value is NOT a number
+
+
+function findIfNumber(value){
+
+    let numberArr = ["1","2","3","4","5","6","7","8","9","0"];
+
+    for(let i=0;i<numberArr.length;i++)
+    {
+        console.log(numberArr[i]);
+        if(numberArr[i] == value)
+        {
+            result = true;
+        }
+        else{
+            result = false;
+        }
+    }
+    return result;
+}
+console.log(findIfNumber("f"));
